@@ -7,8 +7,16 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route to="/" component={Login} />
-          <Route to="/registration" component={Registration} />
+          <Route
+            path="/"
+            exact={true}
+            render={(props) => <Login {...props} />}
+          />
+          <Route
+            path="/registration"
+            exact={true}
+            render={(props) => <Registration {...props} />}
+          />
         </Switch>
       </Router>
     </div>

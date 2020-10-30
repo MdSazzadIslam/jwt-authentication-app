@@ -39,16 +39,16 @@ const Login = () => {
           placeholder="Name"
           name="userName"
           value={userName}
-          onChange={(e) => setuserName("userName", e.target.value)}
+          onChange={(event) => setuserName(("userName", event.target.value))}
         />
         <br />
         <input
-          type="text"
+          type="password"
           id="userPass"
           placeholder="Password"
           name="userPass"
           value={userPass}
-          onChange={(e) => setuserPass("userPass", e.target.value)}
+          onChange={(e) => setuserPass(("userPass", e.target.value))}
         />
         <br />
         <button class="button" type="submit">
